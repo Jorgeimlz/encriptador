@@ -1,0 +1,73 @@
+/* Variables de colores */
+:root {
+    --color-fondo-principal: #f0f0f0; /* Gris muy claro */
+    --color-acento: #669999; /* Verde azulado suave */
+    --color-texto: #333333; /* Casi negro, más suave que el negro puro */
+    --color-borde: #a3c2c2; /* Verde azulado claro */
+    --color-fondo-secundario: #ffffff; /* Blanco */
+}
+
+/* Estilos del contenedor principal */
+main {
+    display: flex;
+    margin-left: 15%;
+}
+
+/* Estilos generales del cuerpo y componentes */
+.body, .mensaje, .input-texto {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color-fondo-principal);
+    border: 3px dashed var(--color-acento);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/* Estilos del título */
+.titulo {
+    text-align: left;
+    border: 3px dotted var(--color-acento);
+    font-size: 20px;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-acento);
+    color: var(--color-fondo-secundario);
+    border-radius: 15px;
+    transition: border-color 0.3s; /* Transición suave del color del borde */
+}
+
+.titulo:hover, .input-texto:hover, .mensaje:hover,
+.encriptar:hover, .desencriptar:hover, .copiar:hover, .contactenos:hover {
+    border-color: var(--color-borde);
+}
+
+.titulo:active, .input-texto:active, .mensaje:active,
+.encriptar:active, .desencriptar:active, .copiar:active, .contactenos:active {
+    border-color: var(--color-acento);
+}
+
+/* Estilos del logo */
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+/* Estilos de los botones (encriptar, desencriptar, copiar, contactenos) */
+.encriptar, .desencriptar, .copiar, .contactenos {
+    margin-top: 5px;
+    border: 2px solid var(--color-acento);
+    padding: 15px;
+    background-color: var(--color-acento);
+    color: var(--color-fondo-secundario);
+    font-family: Arial, sans-serif;
+    border-radius: 25px;
+    transition: border-color 0.3s; /* Transición suave del color del borde */
+}
+
+/* Estilos del footer */
+.footer {
+    text-align: right;
+    margin-top: 20px;
+}
